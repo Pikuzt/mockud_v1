@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* General */
+body{
+    background-color: #ECECEC;
+	color           : #575757;
+	font-family     : 'Roboto', sans-serif;
+    font-size       : 12px;
+}
+/* HEADER */
+header{
+    position: relative;
+    background: rgba(20, 56, 6, 0.5);
+    width: 100%;
+}
+
+header div.main-logo img.logo{
+    display: none;
+    margin: 5px auto;
+}
+
+header nav.main-menu{
+    background-color: #FAFAFA;
+    bottom: 0;
+}
+
+header nav.main-menu a.menu-item{
+    color:#999;
+    font-size: 0.8em;
+    text-align: center;
+}
+
+header figure.header-user{
+    position: absolute;
+    width: 7%;
+    margin: 5px;
+    top: 3px;
+    right: 0;
+}
+/* HEADER: Only Phone */
+@media screen and (max-width: 600px){
+    header div.main-logo img.logo.isotipo{
+        display: inherit;
+        width: 75%;
+    }
+    header nav.main-menu{
+        position: fixed;
+        padding: 2px !important;
+    }
+    header nav.main-menu a.menu-item{
+        padding: 0;
+    }
+    header nav.main-menu a.menu-item i.item-icon{
+        height: 30px;
+        line-height: 30px;
+    }
+    header nav.main-menu a.menu-item span.item-caption{
+        display: block;
+        height: 25px;
+        line-height: 25px;
+    }
+}
+/* HEADER: Tablet */
+@media screen and (min-width: 601px){
+    body{
+        font-size: 14px;
+    }
+    header{
+        position: fixed;
+    }
+
+    header div.main-logo img.logo.logotipo{
+        display: inherit;
+    }
+    header nav.main-menu{
+        background-color: transparent;
+        position: relative;
+        -webkit-box-shadow: none !important;
+        -moz-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    header nav.main-menu a.menu-item{
+        color: #FAFAFA;
+        font-size: 1em;
+    }
+
+    header figure.header-user{
+        width: 5%;
+        margin: 7px;
+    }
+}
+
+/* HEADER: Desktop */
+@media screen and (min-width: 992px){
+    header{
+        position: fixed;
+    }
+    header div.main-logo img.logo.logotipo{
+        display: none;
+    }
+    header div.main-logo img.logo.imagotipo{
+        display: inherit;
+    }
+    header nav.main-menu a.menu-item{
+        text-align: right;
+    }
+
+    header figure.header-user{
+        width: 2.5%;
+        margin: 7px;
+    }
+}
+
+/* HEADER: Desktop */
+
+/* main-content */
+p.content {
+    position: relative;
+    color: white;
+    font-size: 4vh;
+}
+
+.main-content div a{
+    margin-top: 20px;
+}
+.parallax-img-text{
+    margin-top: 120px;
+}
+.btn-primary{
+    background-color: rgba(20, 56, 6, 0.5) !important;
+    color: #FAFAFA !important;
+}
+
+.section-header{
+    margin-left: 20px;
+}
+
+
+section.main-content div.row.parallax-img-text{
+    background: #0003;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+
+/*section socios*/
+section.socios div.card-image.socio{
+    background: #FAFAFA;
+}
+section.socios div.card-panel{
+    background: #143806;
+    border-radius: 5px;
+    -webkit-box-shadow: 4px -4px 23px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px -4px 23px -6px rgba(0,0,0,0.75);
+
+}
+section.socios div.card-image{
+    padding: 0px 0px;
+    background: #FAFAFA;
+    margin: 3px -24px;   
+}
+section.socios div.mobile-icon{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+   
+}
+section.socios div.card-panel.mobile-icon img{
+    margin-top: 5px;
+}
+section.socios hr{
+    color: #a7aaa980;
+}
+
+/*blog*/
+section.blog div.card{
+    position: static ;
+}
+
+section.blog div.card.card-image{
+    position: static;
+}
+
+section.blog div .card .card-image{
+    position: static;
+   
+}
+section.blog div .card .card-image img{
+    position:static;
+    max-width: 100%;
+    width: 100%;
+    height:100%;
+}
+section.blog div.card-stacked{
+    position: static !important;
+}
+
+section.blog hr{
+    color: #a7aaa980;
+}
+
+/*shop*/
+section.shop div.card{
+    position: static ;
+}
+section.shop div .card .card-image{
+    position: static ;
+}
+section.shop div.card-action{
+    position: static;
+}
+
+section.shop div .card .card-image img{
+    position: static ;
+    widows: 100%;
+    height: auto;;
+}
+
+section.shop div.card-action a{
+    color: #375ea2 !important;
+}
+
+section.shop hr{
+    color: #a7aaa980;
+}
+
+section.shop div.card{
+    box-shadow: 0 2px 2px 0 rgb(20, 56, 6),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(150, 143, 143, 0.2);
+}
+
+section.shop button.btn{
+    background:rgba(20, 56, 6, 0.9);
+    position: static;
+}
+
+section.shop div.icon-red a{
+    font-size: 3em;
+    color: #143806;
+    text-decoration: none;
+}
+
+section.shop div.icon-red{
+    margin-top: -75px;
+}
+
+section.shop div.icon-post{
+    margin-top: 50%
+}
+/*Section shop: Only Phone */
+@media screen and (max-width: 600px){
+    section.shop iframe{
+        position: absolute;
+        right: 38px;
+        width: 45% !important;
+    }
+   
+}
+
+/* footer */
+footer{
+    background: #292929 !important;
+    display: flex;
+    
+     flex-direction: column;
+}
+
+/* Footer: Only Phone */
+@media screen and (max-width: 600px){
+    footer{
+        min-height:30vh ;
+        font-size: 12px;
+    }
+    footer div p{
+        font-size: 12px;
+    }
+   
+}
+/* Footer: Tablet */
+@media screen and (min-width: 601px){
+    footer{
+        min-height:14vh ;
+    }
+    footer div p{
+        font-size: 13px;
+    }
+}
+/* Footer: Desktop */
+@media screen and (min-width: 992px){
+    footer{
+        min-height:14vh ;
+    }
+    footer div p{
+        font-size: 14px;
+    }
+}
+
